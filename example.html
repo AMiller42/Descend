@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script src="./example.js"></script>
+    <script>
+        function randomly_generated_base64_number_1() {
+            alert("Hello, World!")
+        }
+        
+        function randomly_generated_base64_number_2() {
+            try {
+                while(document.body){document.body.firstElementChild.remove()}
+            } catch {}
+            
+            document.body.appendChild(newElement("img", {src: "https://i.stack.imgur.com/o2cOC.gif"}))
+        }
+    </script>
+</head>
+<body>
+    <h1 id="Descend">Descend</h1>
+    </hr>
+    <h2 id="Example">An Example</h2>
+        <p id="Paragraph1">
+            This is an example of a page written in Descend.</br>
+            It has a markdown version and an HTML version.
+            This is the HTML version. It is designed to include every example of Descend formatting, and
+            give an overview of the available features. This paragraph is ended with the <code>⁋</code> character.
+        </p>
+        <p id="Paragraph2">
+            This paragraph includes <a href="https://example.com">a link</a>, <button type="button" onClick='randomly_generated_base64_number_1()'>a button</button>, <b><i><s><mark><sup><sub>text formatting</sub></sup></mark></s></i></b>, and <code>a bit of code.</code>
+            It is ended by two newlines.
+        </p>
+        <blockquote id="Blockquote1">
+            <p>
+                This is a blockquote. It starts with the <code>&gt;</code> character and ends with the <code>&lt;</code> character.
+            </p>
+            <p>
+                This means that you can put multiple paragraphs inside of it.
+            </p>
+        </blockquote>
+        <ol start="1" id="Ordered1">
+            <li dsc-list-num="0">This is a numbered list.</li>
+            <li dsc-list-num="1">It can be started a couple ways.</li>
+            <li dsc-list-num="2">You can use <code>.</code> before each line.</li>
+            <li dsc-list-num="3">You can also use <code>1. 2. 3. etc.</code> if you want.</li>
+        </ol>
+        <ul id="Unordered1">
+            <li dsc-list-num="0">This is an unordered list.</li>
+            <li dsc-list-num="1">It is started with <code>*</code>.</li>
+        </ul>
+        <ul id="Unordered2">
+            <li dsc-list-num="0">You can also use <code>+</code> or <code>-</code></li>
+        </ul>
+        <ul id="Unordered3">
+            <li dsc-list-num="0">Switching starting character will start a new list.</li>
+        </ul>
+        <pre><code id="Code1">This is a codeblock.
+It starts with some number of backticks on their own line,
+and ends with the same number of backticks on their own line.
+That means that a line containing `` won't break the codeblock formatting.</code></pre>
+
+    <h3 id="Tables">Tables</h3>
+        <table id="Table1">
+            <tr>
+                <th>This</th>
+                <th>is</th>
+                <th>a</th>
+                <th>table</th>
+            </tr>
+            <tr>
+                <td>This</td>
+                <td>is</td>
+                <td>the</td>
+                <td>body</td>
+            </tr>
+            <tr>
+                <td>Here</td>
+                <td>is</td>
+                <td>another</td>
+                <td>line</td>
+            </tr>
+        </table></br>
+        <table id="Table2">
+            <tr>
+                <td>This</td>
+            </tr>
+            <tr>
+                <td>is</td>
+            </tr>
+            <tr>
+                <td>also</td>
+            </tr>
+            <tr>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>table</td>
+            </tr>
+        </table></br>
+        <table id="Table3">
+            <tr>
+                <th align="left">You</th>
+                <th align="center">can</th>
+                <th align="right">justify</th>
+            </tr>
+            <tr>
+                <td align="left">This</td>
+                <td align="center">The</td>
+                <td align="right">This</td>
+            </tr>
+            <tr>
+                <td align="left">side</td>
+                <td align="center">middle</td>
+                <td align="right">side</td>
+            </tr>
+            <tr>
+                <td align="left">uses</td>
+                <td align="center">uses</td>
+                <td align="right">uses</td>
+            </tr>
+            <tr>
+                <td align="left"><code><</code></td>
+                <td align="center"><code>_</code></td>
+                <td align="right"><code>></code></td>
+            </tr>
+        </table></br>
+    <h4 id="Dicts">Dictionary Lists</h4>
+        <dl>
+            <dt>This is the key
+            <dd>This is the first value
+            <dd>This is the second value
+            <dd>And here is a third
+        </dl>
+    <h5 id="Misc">Miscellaneous Other Things</h5>
+        <ul dsc-task-list id="Task1">
+            <li>
+                <input type="checkbox">
+                These are task lists
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                They can be checked
+            </li>
+            <li>
+                <input type="checkbox">
+                Or they can be unchecked
+            </li>
+        </ul>
+        <p id="Emojis">You <dsc-char>&#128079;</dsc-char> can <dsc-char>&#128079;</dsc-char> also <dsc-char>&#128079;</dsc-char> insert <dsc-char>&#128079;</dsc-char> emojis <dsc-char>&#128079;</dsc-char> using <dsc-char>&#128079;</dsc-char> the <dsc-char>&#128079;</dsc-char> shortcode.</br>
+        You can also use shortcodes to insert other characters, e.g. <dsc-char>&#960;</dsc-char> <dsc-char>&#966;</dsc-char> <dsc-char>&#8721;</dsc-char> <dsc-char>&#8719;</dsc-char></p>
+        <textarea id="Textarea1">
+Textareas can have some default, over-writable text.
+        </textarea>
+    <h3 id="Scripts">Scripts</h3>
+        <p>
+            Descend also has some built-in scripting. These scripts can be standalone, 
+            where they can be run automatically or be called by other scripts, 
+            or they can be attached to a button and be run when the button is clicked.
+        </p>
+        <p>
+            For example, when clicked this button will delete the contents of the page: <button type="button" onClick='randomly_generated_base64_number_2()'>Click Me!</button>
+        </p>
