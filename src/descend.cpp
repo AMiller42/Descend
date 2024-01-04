@@ -1,8 +1,15 @@
-#include <iostream>
+#include "lexer.hpp"
 
-int main()
+#include <iostream>
+#include <vector>
+
+int main(int argc, char* argv[])
 {
-    std::cout << "New beginnings and great expectations.\n";
+    std::vector<Token> tokens { lex(argv[1]) };
+
+    for (Token i : tokens)
+        std::cout << i << " ";
+    std::cout << '\n';
 
     return 0;
 }
